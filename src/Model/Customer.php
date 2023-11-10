@@ -43,4 +43,15 @@ class Customer {
         // Return the array containing the customer's addresses
         return $this->addresses;
     }
+
+        /**
+     * Get the full customer name.
+     *
+     * @return string The concatenated first and last names.
+     */
+    public function getCustomerName()
+    {
+        // Concatenate customer first and last names
+        return $this->first_name . " " . $this->last_name;
+    }
 }

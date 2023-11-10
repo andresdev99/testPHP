@@ -49,3 +49,11 @@ $cart->setShippingAddress($customer->getCustomerAddress()["home"]);
 $cart->addItem($item_1);
 $cart->addItem($item_2);
 $cart->addItem($item_3);
+
+
+Tools::print($customer->getCustomerName());
+Tools::print($customer->getCustomerAddress());
+Tools::print($cart->getItems());
+Tools::print($cart->getShippingAddress());
+Tools::print($cart->calculateCostOfItem(1));
+Tools::print($cart->calculateTotalCost());
